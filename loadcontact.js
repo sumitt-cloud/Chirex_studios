@@ -1,5 +1,5 @@
 fetch("contact.html")
-.then(response => response.text())
-.then(data => {
-document.getElementById("contact-section").innerHTML = data;
-});
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("contact-section").innerHTML = data;
+  });

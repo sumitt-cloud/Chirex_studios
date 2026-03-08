@@ -310,17 +310,18 @@ transition:.3s;
 }
 
 .social-icons a:hover{
-background:#ff3c3c;
+background:#eee9e9;
+color: #0f0f0f;
+text-decoration:underline;
 }
 
 /* icons */
 
-i{
+
   i{
 font-size:30px;
 color:red;
 margin:10px;
-}
 }
 
 /* ABOUT US SECTION */
