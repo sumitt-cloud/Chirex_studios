@@ -76,7 +76,7 @@ nav a:hover {
   text-align: center;
 
   background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.01)),
     url("IMG-20260307-WA0002.jpg");
 
   background-size: cover;
@@ -443,4 +443,67 @@ footer {
     margin: 6px 10px;
     font-size: 14px;
   }
+}
+
+/* ========================= */
+/* FULLSCREEN IMAGE VIEWER */
+/* ========================= */
+
+.clicks img{
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clicks img:hover{
+  transform: scale(1.05);
+}
+
+/* viewer background */
+
+#imageViewer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+/* fullscreen image */
+
+#imageViewer img{
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+/* close button */
+
+#closeBtn{
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 45px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#closeBtn:hover{
+  color: #ff3c3c;
+}
+.clicks{
+text-align:center;
+}
+
+.clicks p{
+margin-top:10px;
+color:#ccc;
 }
